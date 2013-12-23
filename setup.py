@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='django-sphinx-db',
-    version='1.3.2',
+    version='1.3.2.1',
     packages=[
         "django_sphinx_db",
         "django_sphinx_db.backend",
@@ -11,7 +11,7 @@ setup(
         "django_sphinx_db.management",
         "django_sphinx_db.management.commands",
     ],
-    url='http://github.com/rutube/django-sphinx-db/',
+    url='http://github.com/uznick/django-sphinx-db/',
     license='MIT',
     author='Ben Timby',
     author_email='btimby@gmail.com',
