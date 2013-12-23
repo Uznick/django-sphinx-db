@@ -294,7 +294,7 @@ class SQLUpdateCompiler(compiler.SQLUpdateCompiler, SphinxQLCompiler):
             fields.append(name)
         result.append('(%s)' % ', '.join(fields))
         result.append('VALUES (%s)' % ', '.join(values))
-        return ' '.join(result), params
+        return ' '.join(result), tuple(params)
 
 
 class SQLAggregateCompiler(compiler.SQLAggregateCompiler, SphinxQLCompiler):
