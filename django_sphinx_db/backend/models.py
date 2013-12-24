@@ -1,3 +1,4 @@
+import time
 from MySQLdb import OperationalError
 import re
 from django.conf import settings
@@ -269,6 +270,9 @@ class SphinxManager(models.Manager):
 class SphinxField(models.TextField):
     pass
 
+class SphinxDateTimeField(models.DateTimeField):
+    def get_db_prep_value(self, value, connection, prepared=False):
+        return int(time.mktime(value.timetuple()))
 
 class SphinxModel(models.Model):
     class Meta:
