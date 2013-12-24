@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='django-sphinx-db',
-    version='1.3.2.1',
+    version='1.3.2.2',
     packages=[
         "django_sphinx_db",
         "django_sphinx_db.backend",
